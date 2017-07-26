@@ -52,6 +52,9 @@ module.exports = function(RED) {
 
 
         this.on('input', function(msg) {
+            if ( msg.jql !== undefined ) {
+                jql = msg.jql;
+            }
             this.log("Performing search '" + jql + "'");
             node.perform(jql, function(issue, index, array) {
                 var msg={};
