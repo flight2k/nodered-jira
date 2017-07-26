@@ -1,16 +1,16 @@
 {
-  "name": "node-red-contrib-jira",
+  "name": "node-red-contrib-jira-ex",
   "version": "0.0.1",
   "description": "Nodes for using JIRA REST API",
   "license": "GPL-3.0",
   "author": {
-    "name":"Michael Kolb",
-    "email":"dev@db1smk.com",
-    "url":"https://github.com/kwave/"
+    "name":"Frédéric Paillé",
+    "email":"frederic@ordi-logic.com",
+    "url":"https://github.com/flight2k/"
   },
   "repository":{
     "type":"git",
-    "url":"https://github.com/kwave/nodered-jira.git"
+    "url":"https://github.com/flight2k/nodered-jira.git"
   },
   "dependencies": {
     "request": "2.79.0",
