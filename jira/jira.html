@@ -18,7 +18,7 @@
 
 <!-- *************** Server Node *************** -->
 <script type="text/javascript">
-  RED.nodes.registerType('jira-server', {
+  RED.nodes.registerType('jira-server-ex', {
     category: 'config',
     defaults: {
       url: {
@@ -38,11 +38,11 @@
       }
     },
     label: function() {
-      return this.name ||  "jira-server";
+      return this.name ||  "jira-server-ex";
     }
   });
 </script>
-<script type="text/x-red" data-template-name="jira-server">
+<script type="text/x-red" data-template-name="jira-server-ex">
   <div class="form-row">
     <label for="node-config-input-name"><i class="icon-tag"></i> Name</label>
     <input type="text" id="node-config-input-name" placeholder="Name">
@@ -65,7 +65,7 @@
 
 <!-- *************** Search Node *************** -->
 <script type="text/javascript">
-  RED.nodes.registerType('jira-search', {
+  RED.nodes.registerType('jira-search-ex', {
     category: 'jira',
     color: '#a6bbcf',
     defaults: {
@@ -94,12 +94,12 @@
     outputs: 1,
     icon: "nodered-contrib-jira-icon.png",
     label: function() {
-      return this.name || "jira-search";
+      return this.name || "jira-search-ex";
     }
   });
 </script>
 
-<script type="text/x-red" data-template-name="jira-search">
+<script type="text/x-red" data-template-name="jira-search-ex">
   <div class="form-row">
     <label for="node-input-name"><i class="icon-tag"></i> Name</label>
     <input type="text" id="node-input-name" placeholder="Name">
@@ -118,7 +118,7 @@
   </div>
 </script>
 
-<script type="text/x-red" data-help-name="jira-search">
+<script type="text/x-red" data-help-name="jira-search-ex">
   <p>A node to perform JQL searches via JIRAs REST API.</p>
   <b>Configuration</b>
   <ul>
@@ -157,7 +157,7 @@
 
 <!-- *************** Issue-Update Node *************** -->
 <script type="text/javascript">
-  RED.nodes.registerType('jira-issue-update', {
+  RED.nodes.registerType('jira-issue-update-ex', {
     category: 'jira',
     color: '#a6bbcf',
     defaults: {
@@ -173,11 +173,11 @@
     outputs: 1,
     icon: "nodered-contrib-jira-icon.png",
     label: function() {
-      return this.name || "jira-issue-update";
+      return this.name || "jira-issue-update-ex";
     }
   });
 </script>
-<script type="text/x-red" data-template-name="jira-issue-update">
+<script type="text/x-red" data-template-name="jira-issue-update-ex">
   <div class="form-row">
     <label for="node-input-name"><i class="icon-tag"></i> Name</label>
     <input type="text" id="node-input-name" placeholder="Name">
@@ -188,7 +188,7 @@
   </div>
 </script>
 
-<script type="text/x-red" data-help-name="jira-issue-update">
+<script type="text/x-red" data-help-name="jira-issue-update-ex">
   <p>A node to perform issue updates via JIRAs REST API.</p>
   <p>
     <ul>
@@ -201,7 +201,7 @@
 
 <!-- *************** Issue-Get Node *************** -->
 <script type="text/javascript">
-  RED.nodes.registerType('jira-issue-get', {
+  RED.nodes.registerType('jira-issue-get-ex', {
     category: 'jira',
     color: '#a6bbcf',
     defaults: {
@@ -223,11 +223,11 @@
     outputs: 1,
     icon: "nodered-contrib-jira-icon.png",
     label: function() {
-      return this.name || "jira-issue-get";
+      return this.name || "jira-issue-get-ex";
     }
   });
 </script>
-<script type="text/x-red" data-template-name="jira-issue-get">
+<script type="text/x-red" data-template-name="jira-issue-get-ex">
   <div class="form-row">
     <label for="node-input-name"><i class="icon-tag"></i> Name</label>
     <input type="text" id="node-input-name" placeholder="Name">
@@ -246,7 +246,7 @@
   </div>
 </script>
 
-<script type="text/x-red" data-help-name="jira-issue-get">
+<script type="text/x-red" data-help-name="jira-issue-get-ex">
   <p>A node to get issues via JIRAs REST API.</p>
   <p>
     <ul>
@@ -257,7 +257,7 @@
 
 <!-- *************** Issue-Create Node *************** -->
 <script type="text/javascript">
-  RED.nodes.registerType('jira-issue-create', {
+  RED.nodes.registerType('jira-issue-create-ex', {
     category: 'jira',
     color: '#a6bbcf',
     defaults: {
@@ -273,11 +273,11 @@
     outputs: 1,
     icon: "nodered-contrib-jira-icon.png",
     label: function() {
-      return this.name || "jira-issue-create";
+      return this.name || "jira-issue-create-ex";
     }
   });
 </script>
-<script type="text/x-red" data-template-name="jira-issue-create">
+<script type="text/x-red" data-template-name="jira-issue-create-ex">
   <div class="form-row">
     <label for="node-input-name"><i class="icon-tag"></i> Name</label>
     <input type="text" id="node-input-name" placeholder="Name">
@@ -288,7 +288,7 @@
   </div>
 </script>
 
-<script type="text/x-red" data-help-name="jira-issue-create">
+<script type="text/x-red" data-help-name="jira-issue-create-ex">
 
   <p>A node to create issues via JIRAs REST API. See <a href="https://docs.atlassian.com/jira/REST/cloud/#api/2/issue-createIssue" target="_blank">JIRA Documentation</a> for details about the payload format.</p>
   <p>
@@ -307,7 +307,7 @@
 
 <!-- *************** Issue-Comment-Add Node *************** -->
 <script type="text/javascript">
-  RED.nodes.registerType('jira-issue-comment-add', {
+  RED.nodes.registerType('jira-issue-comment-add-ex', {
     category: 'jira',
     color: '#a6bbcf',
     defaults: {
@@ -323,11 +323,11 @@
     outputs: 1,
     icon: "nodered-contrib-jira-icon.png",
     label: function() {
-      return this.name || "jira-issue-comment-add";
+      return this.name || "jira-issue-comment-add-ex";
     }
   });
 </script>
-<script type="text/x-red" data-template-name="jira-issue-comment-add">
+<script type="text/x-red" data-template-name="jira-issue-comment-add-ex">
   <div class="form-row">
     <label for="node-input-name"><i class="icon-tag"></i> Name</label>
     <input type="text" id="node-input-name" placeholder="Name">
@@ -338,7 +338,7 @@
   </div>
 </script>
 
-<script type="text/x-red" data-help-name="jira-issue-comment-add">
+<script type="text/x-red" data-help-name="jira-issue-comment-add-ex">
   <p>A node to create issue comments via JIRAs REST API. See <a href="https://docs.atlassian.com/jira/REST/cloud/#api/2/issue-addComment" target="_blank">JIRA Documentation</a> for details about the payload format.</p>
   <p>
     <h1>Input</h1>
@@ -359,7 +359,7 @@
 
 <!-- *************** Issue-Comment-Update Node *************** -->
 <script type="text/javascript">
-  RED.nodes.registerType('jira-issue-comment-update', {
+  RED.nodes.registerType('jira-issue-comment-update-ex', {
     category: 'jira',
     color: '#a6bbcf',
     defaults: {
@@ -375,12 +375,12 @@
     outputs: 1,
     icon: "nodered-contrib-jira-icon.png",
     label: function() {
-      return this.name || "jira-issue-comment-update";
+      return this.name || "jira-issue-comment-update-ex";
     }
   });
 </script>
 
-<script type="text/x-red" data-template-name="jira-issue-comment-update">
+<script type="text/x-red" data-template-name="jira-issue-comment-update-ex">
   <div class="form-row">
     <label for="node-input-name"><i class="icon-tag"></i> Name</label>
     <input type="text" id="node-input-name" placeholder="Name">
@@ -391,7 +391,7 @@
   </div>
 </script>
 
-<script type="text/x-red" data-help-name="jira-issue-comment-update">
+<script type="text/x-red" data-help-name="jira-issue-comment-update-ex">
   <p>A node to update issue comments via JIRAs REST API. See <a href="https://docs.atlassian.com/jira/REST/cloud/#api/2/issue-updateComment" target="_blank">JIRA Documentation</a> for details about the payload format.</p>
   <p>
     <h1>Input</h1>
