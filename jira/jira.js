@@ -382,7 +382,7 @@ module.exports = function(RED) {
     }
 
 
-    RED.nodes.registerType("jira-server", JiraServerNode, {
+    RED.nodes.registerType("jira-server-ex", JiraServerNode, {
         credentials: {
             username: {
                 type: "text"
