@@ -392,10 +392,10 @@ module.exports = function(RED) {
             }
         }
     });
-    RED.nodes.registerType("jira-search", JiraSearchNode);
-    RED.nodes.registerType("jira-issue-update", JiraIssueUpdateNode);
-    RED.nodes.registerType("jira-issue-get", JiraIssueGetNode);
-    RED.nodes.registerType("jira-issue-create", JiraIssueCreateNode);
-    RED.nodes.registerType("jira-issue-comment-add", JiraIssueCommentAddNode);
-    RED.nodes.registerType("jira-issue-comment-update", JiraIssueCommentEditNode);
+    RED.nodes.registerType("jira-search-ex", JiraSearchNode);
+    RED.nodes.registerType("jira-issue-update-ex", JiraIssueUpdateNode);
+    RED.nodes.registerType("jira-issue-get-ex", JiraIssueGetNode);
+    RED.nodes.registerType("jira-issue-create-ex", JiraIssueCreateNode);
+    RED.nodes.registerType("jira-issue-comment-add-ex", JiraIssueCommentAddNode);
+    RED.nodes.registerType("jira-issue-comment-update-ex", JiraIssueCommentEditNode);
 }
