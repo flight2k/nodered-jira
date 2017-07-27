@@ -57,7 +57,7 @@ module.exports = function(RED) {
             }
             this.log("Performing search '" + jql + "'");
             node.perform(jql, function(issue, index, array) {
-                var msg={};
+                //var msg={};
                 msg.topic = issue.key;
                 msg.payload = issue;
                 node.send(msg);
